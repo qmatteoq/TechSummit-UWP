@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="XamlImprovements.Views.NewBindingFeatures"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlImprovements.Views"
+    xmlns:model="using:XamlImprovements.Model"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <DataTemplate x:Key="DefaultTemplate" x:DataType="model:Person">
+            <StackPanel Orientation="Horizontal" Margin="24">
+                <TextBlock Text="{x:Bind GetFullDescription(Name, Surname, IsMvp)}" VerticalAlignment="Center" />
+                <Image Source="/Assets/mvp.png" Width="40" Margin="20, 0, 0, 0" Visibility="{x:Bind ((Visibility)IsMvp)}" />
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView x:Name="Customers"
+                  ItemTemplate="{StaticResource DefaultTemplate}" />
+    </Grid>
+</Page>
