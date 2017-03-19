@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditBoxControlLibrary", "EditBoxControlLibrary\EditBoxControlLibrary.csproj", "{558EEE03-6927-4FE6-AEB6-972769960849}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseItDemo.Data", "Expen
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ExpenseItDemo.Package", "ExpenseItDemo.Package\ExpenseItDemo.Package.jsproj", "{4DA385D8-F368-4235-97D3-D7C16CB2938C}"
 EndProject
-Project("{365BE41E-7993-430D-A5E6-1381A54BC077}") = "ExpenseItDemo.Debug", "ExpenseItDemo.Debug\ExpenseItDemo.Debug.vsdproj", "{ECE489D7-2926-4CC4-AE47-B65F2113FCCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseItDemo.Debug", "ExpenseItDemo.Debug\ExpenseItDemo.Debug.vsdproj", "{ECE489D7-2926-4CC4-AE47-B65F2113FCCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
